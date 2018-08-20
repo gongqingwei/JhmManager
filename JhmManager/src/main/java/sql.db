@@ -1,0 +1,31 @@
+create database jhmdb;
+use jhmdb;
+create table user(
+	id int not null auto_increment primary key,
+	username varchar(50) not null,
+	pwd varchar(50) not null,
+	createusertime DateTime
+);
+
+insert into user(username,pwd,createusertime) values("admin","123456","2018-08-01 20:05:38");
+
+
+create table toufang(
+	num  int  auto_increment primary key,
+	suoluetu varchar(200),
+	erweicodename varchar(50),
+	pagetitle varchar(50),
+	alltoufangnum int,
+	alreadytoufangnum int,
+	usernum int,
+	exchangeqr int,
+	createdate DateTime
+);
+
+create table loginrecord(
+	id int not null auto_increment primary key,
+	username varchar(50) not null,
+	lastlogintime DateTime,
+	lastloginip varchar(100),
+	createusertime DateTime
+);

@@ -1,0 +1,19 @@
+{accessid: "LTAINTb0bBB44Hfq", host: "http://qunqrcode2.oss-cn-qingdao.aliyuncs.com",бн}
+accessid
+:
+"LTAINTb0bBB44Hfq"
+dir
+:
+"diaodalong/"
+expire
+:
+1533197309
+host
+:
+"http://qunqrcode2.oss-cn-qingdao.aliyuncs.com"
+policy
+:
+"eyJleHBpcmF0aW9uIjoiMjAxOC0wOC0wMlQxNjowODoyOVoiLCJjb25kaXRpb25zIjpbWyJjb250ZW50LWxlbmd0aC1yYW5nZSIsMCwxMDQ4NTc2XSxbInN0YXJ0cy13aXRoIiwiJGtleSIsImRpYW9kYWxvbmdcLyJdXX0="
+signature
+:
+"Mztg8o40Xgprk9mHRUQyNwNGrNw="

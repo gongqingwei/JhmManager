@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	<!-- namespace的值一定是接口的全路径与接口绑定后,此文件相当于接口的实现类  -->
+<mapper namespace="dao.UserMapper">
+<select id="userLogin" parameterType="string" resultType="User">
+    select * from user where userName=#{userName} and pwd=#{pwd};
+</select>
+
+<insert id="insertToufang" parameterType="Toufang">
+    insert into toufang(suoluetu,erweicodename,pagetitle,alltoufangnum,alreadytoufangnum,usernum,exchangeqr,createdate)
+    values(#{suoluetu},#{erweicodename},#{pagetitle},#{alltoufangnum},#{alreadytoufangnum},#{usernum},#{exchangeqr},#{createdate});
+</insert>
+
+<select id="selectToufangs" parameterType="int" resultType="Toufang">
+    select * from toufang where usernum=#{usernum}
+</select>
+
+<update id="updateToufang" parameterType="int" >
+    update toufang set alltoufangnum=#{alltoufangnum} where num=#{num};
+</update>
+
+<delete id="deleteToufang" parameterType="int">
+    delete from toufang where num=#{num}
+</delete>
+
+<update id="updatePassword" parameterType="user">
+    update user set pwd=#{pwd} where id=#{id}
+</update>
+
+</mapper>
